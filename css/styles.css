@@ -1,3 +1,223 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  margin:0 30px;
+}
+
+h2 {
+  margin: 30px;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1;
+  margin-bottom: 40px;
+}
+
 .header {
-  background: red;
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-image: url('../img/heroImg.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+}
+
+.h1-line-through {
+  text-decoration: line-through;
+  text-decoration-color: lightcoral;
+}
+
+.portfolio {
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.experiment {
+  border-radius: 5px;
+  margin: 20px 30px;
+  padding: 20px;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  border-color: transparent;
+}
+
+.experiment-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.experiment-subtitle {
+  margin: 0;
+}
+
+.experiment strong {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 18px;
+}
+
+.experiment-description {
+  font-size: 20px;
+}
+
+.experiment-image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.7);
+  border-color: transparent;
+}
+
+.experiment-details {
+  width: 500px;
+}
+
+.experiment-imageContainer {
+  width: 500px;
+}
+
+.myReadings {
+  padding-top: 20px;
+  background-color:#fafafa;
+}
+
+.readingContainer {
+  display: flex;
+  margin: 10px 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.reading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reading-image {
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.reading-text-details {
+  align-self: flex-start;
+  background-color: #ffffff;
+  background-color: rgba(255,255,255,.8);
+  width: 65%;
+  margin-left: 10px;
+  position: relative;
+  margin-top: -153px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+
+.reading-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reading-description {
+  text-align: justify;
+  padding: 10px;
+  margin-top: 0;
+  line-height: 22px;
+}
+
+.reading-url {
+  color: #e95657; 
+  border: 2px solid;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
 }
