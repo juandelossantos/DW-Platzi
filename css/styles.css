@@ -14,10 +14,12 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 52px;
   line-height: 1.5em;
   letter-spacing: -.2px;
   margin:0 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 h2 {
@@ -27,6 +29,15 @@ h2 {
   font-weight: bold;
   letter-spacing: 1;
   margin-bottom: 40px;
+}
+
+.headerContainer {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
 }
 
 .header {
@@ -83,9 +94,19 @@ figure {
   display: flex;
   align-items: center;
   height: 300px;
-  background-image: url('../img/heroImg.png');
+  background-image: url('../img/writing.jpg');
   background-repeat: no-repeat;
   background-position-x: 100%;
+  background-position-y: 70%;
+}
+
+.heroContainer {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
 }
 
 .h1-line-through {
@@ -96,6 +117,15 @@ figure {
 .portfolio {
   background-color: #fafafa;
   padding: 20px;
+}
+
+.portfolioContainer {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
 }
 
 .experiment {
@@ -206,6 +236,73 @@ figure {
   margin-bottom: 20px;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #282D31;
+  color: white;
+  height: 150px;
+}
+
+.social {
+  display: flex;
+  margin-top: 64px;
+}
+
+.social-link {
+  justify-content: center;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 20px;
+}
+
+.social-link.twitter {
+  background-image: url('../img/twitter.svg');
+}
+.social-link.facebook {
+  background-image: url('../img/facebook.svg');
+}
+.social-link.github {
+  background-image: url('../img/github.svg');
+}
+.social-link.linkedin {
+  background-image: url('../img/linkedin.svg');
+}
+
+.email-form input {
+  border-color:#1b2127;
+  padding: 15px 20px 15px 50px;
+  border-radius: 5px;
+  border-style: solid;
+  background-image: url('../img/mail.svg');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+  width: 300px;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.email-form button {
+  font-size: 22px;
+  font-weight: 100;
+  background: transparent;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.email-form button:hover {
+  background: white;
+  color: #282d31;
+  border-color:#1b2127;
+}
+
 .footer {
   background-color: #1b2127;
   color: white;
@@ -214,10 +311,24 @@ figure {
   justify-content: space-between;
 }
 
+.footerContainer {
+  margin: 0 auto;
+  width: 1000px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
 .footer img {
   vertical-align: middle;
 }
 
 .footer a {
   color: white;
+}
+
+.brand {
+  height: 70px;
+  width: 70px;
+  margin: 20px 0;
 }
