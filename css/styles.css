@@ -31,15 +31,6 @@ h2 {
   margin-bottom: 40px;
 }
 
-.headerContainer {
-  width: 1000px;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-}
-
 .header {
   background-color: #1b2127;
   color: white;
@@ -47,6 +38,16 @@ h2 {
   height: 90px;
   align-items: center;
   justify-content: space-between;
+}
+
+.headerContainer {
+  flex: 1;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
 }
 
 .header a {
@@ -105,6 +106,7 @@ figure {
   width: 1000px;
   margin: 0 auto;
   display: inherit;
+  flex-wrap: wrap;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
@@ -121,7 +123,7 @@ figure {
 }
 
 .portfolioContainer {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -135,6 +137,7 @@ figure {
   padding: 20px;
   background-color:white;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
@@ -160,17 +163,18 @@ figure {
 }
 
 .experiment-image {
+  max-width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,.7);
   border-color: transparent;
 }
 
 .experiment-details {
-  width: 500px;
+  width: 50%;
 }
 
 .experiment-imageContainer {
-  width: 500px;
+  width: 50%;
 }
 
 .myReadings {
@@ -190,7 +194,7 @@ figure {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  width: 500px;
+  width: 50%;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -244,6 +248,7 @@ figure {
   background-color: #282D31;
   color: white;
   height: 150px;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -273,7 +278,7 @@ figure {
   background-image: url('../img/linkedin.svg');
 }
 
-.email-form input {
+.email-form-input {
   border-color:#1b2127;
   padding: 15px 20px 15px 50px;
   border-radius: 5px;
@@ -314,10 +319,11 @@ figure {
 
 .footerContainer {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
+  flex-wrap: wrap;
 }
 
 .footer img {
@@ -329,7 +335,183 @@ figure {
 }
 
 .brand {
+  display: flex;
   height: 70px;
   width: 70px;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    display: block;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+
+  .header .logo {
+    text-align: center;
+  }
+
+  h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .portfolio {
+    padding: 0;
+  }
+
+  .experiment {
+    padding: 10px;
+  }
+
+  .experiment-details {
+    width: 50%;
+  }
+
+  .experiment-title {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+
+  .experiment-url {
+    font-size: 1em;
+  }
+
+  .experiment-subtitle {
+    font-size: .7em;
+  }
+
+  .experiment-date {
+    font-size: 1em;
+  }
+
+  .experiment-description {
+    font-size: .8em;
+  }
+
+  .experiment-imageContainer {
+    width: 50%;
+    text-align: center;
+  }
+
+  .myReadings {
+    padding-top: 5px;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .reading {
+    width: 45%;
+  }
+
+  .reading-image {
+    width: 100%;
+  }
+
+  .reading-text-details {
+    align-self: center;
+    width: 90%;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+
+  .reading-title {
+    margin-top: 0;
+  }
+
+  .reading-description {
+    font-size: .8em;
+    line-height: 1.2em;
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .email-form-title {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .social {
+    margin: 20px 0;
+  }
+
+  .footer {
+    display: block;
+    border:1px solid transparent;
+    text-align: center;
+  }
+
+  .brand {
+    display: block;
+    margin: 10px auto;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .experiment-details {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .experiment-imageContainer {
+    width: 100%;
+  }
+
+  .experiment-image {
+    width: 80%;
+  }
+
+  .experiment-description {
+    font-size: 1.5em;
+  }
+
+  .reading {
+    width: 100%;
+  }
+
+  .email-form-input {
+    width: 53%;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-form button {
+    margin-top: 20px;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+  }
 }
