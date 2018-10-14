@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="headerContainer">
         <figure class="logo">
@@ -34,7 +35,7 @@
         <h1>¡Hola! soy <strong>Juan De Los Santos</strong>.<br>Escritor<span class="h1-line-through"> (en borrador)</span>.</h1>
       </div>
     </section>
-    <section id="portafolio" class="portfolio">
+    <section id="experimentos" class="portfolio">
       <div class="portfolioContainer">
         <h2>Algunos experimentos</h2>
         <article class="experiment">
@@ -130,5 +131,36 @@
       </div>
       
     </footer>
+    <script>
+
+      const ipad = window.matchMedia('screen and (max-width: 768px)');
+
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');
+
+      ipad.addListener(validation);
+
+      function validation(event) {
+        console.log(event.matches);
+        if(event.matches) {
+          burgerButton.addEventListener('click', hideShow);
+        } else {
+          burgerButton.removeEventListener('click', hideShow);
+        }
+      }
+
+      validation(ipad);
+
+      function hideShow() {
+        if(menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        } 
+      }
+
+      
+
+    </script>
   </body>
 </html>
